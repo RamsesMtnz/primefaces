@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml"  
+    xmlns:h="http://java.sun.com/jsf/html"  
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core" 
+    xmlns:p="http://primefaces.org/ui">  
+  
+    <h:head>  
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  		<h:outputStylesheet name="css/screen.css" />
+    </h:head>  
+      
+    <h:body>  
+       <p:layout fullPage="true">
+ 
+		    <p:layoutUnit position="north" size="120" >
+		        
+		        <h1 align="center">Seguridad Integral Project</h1>
+		    </p:layoutUnit>
+ 
+		    <p:layoutUnit position="south" size="100" header="By Renato " resizable="true" closable="true" collapsible="true">
+		        <h:outputText value="Jamas te Canses de Seguir Fallando " />
+		    </p:layoutUnit>
+ 
+		    <p:layoutUnit position="west" size="200" header="Menu" >
+		        <h:form >
+		        	<p:menu toggleable="true" >
+				        <p:submenu label="Administracion Aplicacion">
+				            <p:menuitem value="Tipo Ambiente" outcome="tipo-ambiente.xhtml" />
+				        </p:submenu>
+				    </p:menu>
+		        </h:form>
+		        
+		    </p:layoutUnit>
+ 
+		    <p:layoutUnit position="center">
+				<ui:insert name="content">
+                    
+				</ui:insert>
+		    </p:layoutUnit>
+ 
+		</p:layout>
+       
+    </h:body>  
+</html>  

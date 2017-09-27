@@ -1,0 +1,79 @@
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>   
+
+   <meta charset="UTF-8"/>
+    <title>Primefa Project Example| LOG IN</title>
+    <!-- Tell the browser to be responsive to screen width -->
+     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+     <h:outputStylesheet library="plugins/bootstrap/css"  name="bootstrap.css" />
+     <h:outputStylesheet library="plugins/sb-admin2"  name="sb-admin-2.css" />
+     <h:outputStylesheet library="plugins/font-awesome/css"  name="font-awesome.css" />
+     <h:outputStylesheet library="plugins/metisMenu"  name="metisMenu.min.css" />
+	<!--  h:outputScript library="plugins/jquery"  name="jquery.js" / puede causar conflictos con jquery-->
+    <h:outputScript library="plugins/bootstrap/js"  name="bootstrap.js" />
+    <h:outputScript library="plugins/sb-admin2"  name="sb-admin-2.js" />
+	<h:outputScript library="plugins/metisMenu"  name="metisMenu.min.js" />
+     <h:outputScript library="plugins"  name="bootbox.min.js" />
+</h:head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Seguridad Integral</a>
+            </div>
+            <!-- /.navbar-header -->
+			<ui:insert name="navVertical">
+					<ui:include src="nav-vertical.xhtml" />
+			</ui:insert>
+            
+            <!-- /.navbar-top-links -->
+
+            <ui:insert name="menu">
+					<ui:include src="menu-principal.xhtml" />
+			</ui:insert>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header"><ui:insert name="moduleTitle"></ui:insert></h1>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+                <ui:insert name="content">
+                	
+                    <!-- Aqui va el contenido de la paginita jeje -->
+                    
+				</ui:insert>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    
+    
+   
+</body>
+
+</html>
