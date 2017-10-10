@@ -5,4 +5,4 @@
  * @author Renato
  *
  */
-package com.mx.paquete.test;
+package com.mx.paquete.test.dao;

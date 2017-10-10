@@ -33,7 +33,7 @@ public class GenericoImplementsDAO<T, PK extends Serializable> implements com.mx
 		 type =  (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
 	}
 	
-	@PersistenceContext(unitName = "cajasPU") 
+	@PersistenceContext(unitName = "bitaPU") 
 	private EntityManager em;
 	
 	/***
