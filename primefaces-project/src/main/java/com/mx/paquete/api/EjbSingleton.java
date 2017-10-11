@@ -11,7 +11,7 @@ import com.mx.paquete.accesodatos.dao.MaestroDAO;
 import com.mx.paquete.accesodatos.pu.MaestroEntity;
 
 @Singleton
-@Startup
+//@Startup
 public class EjbSingleton {
 
 	@Inject MaestroDAO maestroDAO;
